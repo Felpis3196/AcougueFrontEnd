@@ -1,0 +1,57 @@
+﻿@model Somativa.Models.Produto
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="container container-fluid">
+    <h4>Detalhes do @Model.Nome</h4>
+    <hr />
+    <div class="row  justify-content-center align-content-center text-center">
+        <div class="col-md-6">
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Nome)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Nome)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Preco)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Preco)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Fornecedor)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Fornecedor.Nome)
+                </dd>
+            </dl>
+        </div>
+        <div class="col-md-6">
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Estoque)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Estoque)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Categoria)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Categoria.Nome)
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="text-center">
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="ProdutoId" />
+            <a asp-action="Index"><svg bootstrap-icon="ArrowReturnLeft" width="24" height="24" aria-label="Voltar" class="text-primary"></svg></a>
+            <input type="submit" value="Apagar" class="btn btn-danger" />
+        </form>
+    </div>
+</div>

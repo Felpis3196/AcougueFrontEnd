@@ -1,0 +1,49 @@
+﻿@model Somativa.Models.CompraItem
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container container-fluid row">
+    <div class="col">
+        <h4 class="text-start">Editar Compra</h4>
+    </div>
+    <hr />
+    <div class="row g-2">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CompraId" />
+            <div class="row g-2">
+                <div class="form-floating mb-3 col">
+                    <select asp-for="CompraId" class="form-control" asp-items="ViewBag.CompraId"></select>
+                    <label asp-for="CompraId" class="control-label">Nota Fiscal</label>
+                </div>
+                <div class="form-floating mb-3 col">
+                    <select asp-for="ProdutoId" class="form-control" asp-items="ViewBag.ProdutoId"></select>
+                    <label asp-for="ProdutoId" class="control-label">Produto</label>
+                </div>
+            </div>
+            <div class="row g-2">
+                <div class="form-floating mb-3 col-sm-12 col-md-4 col-lg-4">
+                    <input asp-for="Quantidade" type="number" class="form-control" id="inTel" placeholder="name@example.com" step="1">
+                    <label asp-for="Quantidade" for="inTel">Quantidade</label>
+                    <span asp-validation-for="Quantidade" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3 col-sm-12 col-md-4 col-lg-4">
+                    <input asp-for="Unitario" type="number" class="form-control" id="inTel" placeholder="name@example.com" step=".01">
+                    <label asp-for="Unitario" for="inTel">Valor Unitário</label>
+                    <span asp-validation-for="Unitario" class="text-danger"></span>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg justify-content-center align-content-center text-center">
+                    <input type="submit" value="Aplicar Alterações" class="btn btn-success" />
+                    <a asp-controller="CompraItems" asp-action="Index" asp-route-id=@Model.CompraId><svg bootstrap-icon="ArrowReturnLeft" width="24" height="24" aria-label="Voltar" class="text-danger"></svg></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

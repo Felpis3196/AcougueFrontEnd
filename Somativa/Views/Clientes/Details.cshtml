@@ -1,0 +1,62 @@
+﻿@model Somativa.Models.Cliente
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<div class="container container-fluid">
+    <h4>Detalhes do @Model.Nome</h4>
+    <hr />
+    <div class="row  justify-content-center align-content-center text-center">
+        <div class="col-md-6">
+            <dl class="row">
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Nome)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Nome)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Endereco)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Endereco)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Telefone)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Telefone)
+                </dd>
+            </dl>
+        </div>
+        <div class="col-md-6">
+            <dl class="row">
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Cpf)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Cpf)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Email)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Nascimento)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Nascimento)
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="text-center">
+        <a asp-action="Edit" asp-route-id="@Model?.ClienteId"><svg bootstrap-icon="PencilFill" width="24" height="24" aria-label="Voltar" class="text-primary"></svg></a>
+        <a asp-action="Index"><svg bootstrap-icon="ArrowReturnLeft" width="24" height="24" aria-label="Voltar" class="text-danger"></svg></a>
+    </div>
+</div>
+

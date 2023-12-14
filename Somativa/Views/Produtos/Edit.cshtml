@@ -1,0 +1,61 @@
+﻿@model Somativa.Models.Produto
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container container-fluid row">
+    <div class="col">
+        <h4 class="text-start">Editar @Model.Nome</h4>
+    </div>
+    <hr />
+    <div class="row g-2">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row g-2">
+                <div class="input-group mb-3 col">
+                    <div class="form-floating mb-3 col">
+                        <select asp-for="FornecedorId" class="form-control" asp-items="ViewBag.FornecedorId"></select>
+                        <label asp-for="FornecedorId" class="control-label"></label>
+                    </div>
+                </div>
+                <div class="input-group mb-3 col">
+                    <div class="form-floating mb-3 col">
+                        <select asp-for="CategoriaId" class="form-control" asp-items="ViewBag.CategoriaId"></select>
+                        <label asp-for="CategoriaId" class="control-label"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-baseline">
+                <div class="input-group mb-3 col">
+                    <span class="input-group-text"><svg bootstrap-icon="Truck" width="14" height="14" aria-label="Cpf"></svg></span>
+                    <div class="form-floating">
+                        <input asp-for="Estoque" type="number" class="form-control" id="inEstoque" placeholder="exemplo" step="1">
+                        <label asp-for="Estoque" for="inEstoque">Cpf</label>
+                    </div>
+                </div>
+                <div class="input-group mb-3 col">
+                    <span class="input-group-text"><svg bootstrap-icon="Cash" width="14" height="14" aria-label="Cpf"></svg></span>
+                    <div class="form-floating">
+                        <input asp-for="Preco" type="number" class="form-control" id="inPreco" placeholder="exemplo" step=".01">
+                        <label asp-for="Preco" for="inPreco">Preço</label>
+                    </div>
+                </div>
+                <div class="input-group mb-3 col">
+                    <span class="input-group-text"><svg bootstrap-icon="Person" width="14" height="14" aria-label="Data"></svg></span>
+                    <div class="form-floating">
+                        <input asp-for="Nome" type="text" class="form-control" id="inNome" placeholder="Cpf" type="date">
+                        <label asp-for="Nome" for="inNome">Nome</label>
+                    </div>
+                </div>
+                <div class="col justify-content-center align-content-center text-center">
+                    <input type="submit" value="Aplicar Alterações" class="btn btn-success" />
+                    <a asp-action="Index"><svg bootstrap-icon="ArrowReturnLeft" width="24" height="24" aria-label="Voltar" class="text-danger"></svg></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

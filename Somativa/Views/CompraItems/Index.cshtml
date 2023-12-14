@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Somativa.Models.CompraItem>
+
+@{
+    ViewData["Title"] = "Index";
+    var VendaIdAux = ViewData["CompraId"];
+}
+
+<div class="row container-fluid">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-3 text-center">
+        <h1>Itens da Compra</h1>
+        <p>
+            <a asp-action="Create" asp-route-id="@ViewData["CompraId"]" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Requer Cargo de Operador">
+                Adicionar Item a Compra <span class="badge text-bg-warning"><svg bootstrap-icon="Basket2Fill" width="24" height="24" aria-label="Categorias" class="bg-warning text-white rounded-circle p-1"></svg></span>
+            </a>
+        </p>
+    </div>
+    <div class="col table-responsive">
+        <table class="table table-striped table-hover table-responsive">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Compra)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Produto)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Quantidade)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Unitario)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Compra.Nota)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Produto.Nome)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Quantidade)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Unitario)
+                        </td>
+                        <td class="text-end">
+                            <a asp-action="Edit" asp-route-id="@item.CompraItemId"><svg bootstrap-icon="PencilSquare" width="32" height="32" aria-label="Editar" class="text-primary p-1"></svg></a>
+                            <a asp-action="Details" asp-route-id="@item.CompraItemId"><svg bootstrap-icon="InfoCircleFill" width="32" height="32" aria-label="Detalhes" class="text-warning p-1"></svg></a>
+                            <a asp-action="Delete" asp-route-id="@item.CompraItemId"><svg bootstrap-icon="TrashFill" width="32" height="32" aria-label="Apagar" class="text-danger  p-1"></svg></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

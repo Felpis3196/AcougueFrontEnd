@@ -1,0 +1,103 @@
+﻿@model IEnumerable<Somativa.Models.Movimentacao>
+
+@{
+    ViewData["Title"] = "RelatMov";
+    var prod = ViewData["Produtos"] as List<Produto>;
+    prod.Insert(0, new Produto { ProdutoId = new Guid(), Nome = "Todos" });
+}
+
+<div class="container container-fluid">
+    <h1 class="text-center">RelatMov</h1>
+    <div cite="row">
+        <form>
+            <div class="row g-3">
+                <div class="input-group mb-3 col">
+                    <span class="input-group-text" id="basic-addon1">Data início</span>
+                    <input type="date" name="inDataIni" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3 col">
+                    <span class="input-group-text" id="basic-addon1">Data Fim</span>
+                    <input type="date" name="inDataFim" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="input-group mb-3 col">
+                    <span class="input-group-text" id="basic-addon1">Tipo de movimentação</span>
+                    <select class="form-select" aria-label="Default select example" name="inTipo">
+                        <option value="0">Todos</option>
+                        <option value="1">Entradas</option>
+                        <option value="2">Saídas</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3 col">
+                    <span class="input-group-text" id="basic-addon1">Produto</span>
+                    <select class="form-select" aria-label="Default select example" name="inProduto">
+                        @foreach (var item in prod)
+                        {
+                            <option value="@item.Nome">@item.Nome</option>
+                        }
+                    </select>
+                </div>
+                <button asp-action="SearchMov" class="btn btn-success ">Filtrar</button>
+            </div>                            
+        </form>
+    </div>
+    <div class="">
+        <table class="table table-striped table-hover table-responsive">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Nota)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DataHora)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TipoMovimentacao)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Produto)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Quantidade)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Unitario)
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Nota)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DataHora)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TipoMovimentacao)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Produto)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Quantidade)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Unitario)
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+
+
+

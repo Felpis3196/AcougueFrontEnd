@@ -1,0 +1,32 @@
+﻿@model Somativa.Models.Compra
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container container-fluid">
+    <h4>Detalhes da compra de nota  @Model.Nota</h4>
+    <hr />
+    <div class="row  justify-content-center align-content-center text-center">
+        <div class="col-md-6">
+            <dl class="row">
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.Nota)
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.Nota)
+                </dd>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.DataHora)
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.DataHora)
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="text-center">
+        <a asp-action="Edit" asp-route-id="@Model?.CompraId"><svg bootstrap-icon="PencilFill" width="24" height="24" aria-label="Voltar" class="text-primary"></svg></a>
+        <a asp-action="Index"><svg bootstrap-icon="ArrowReturnLeft" width="24" height="24" aria-label="Voltar" class="text-danger"></svg></a>
+    </div>
+</div>

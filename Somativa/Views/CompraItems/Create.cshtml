@@ -1,0 +1,45 @@
+﻿@model Somativa.Models.CompraItem
+
+@{
+    ViewData["Title"] = "Create";
+    var CompraIdAux = ViewData["CompraId"];
+}
+
+<div class="container container-fluid row">
+    <div class="col">
+        <h4 class="text-start">Adicionar Venda</h4>
+    </div>
+    <hr />
+    <div class="row g-2">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group" style="display: none">
+                <label asp-for="CompraId" class="control-label"></label>
+                <input asp-for="CompraId" value="@CompraIdAux" class="form-control" readonly />
+            </div>
+            <div class="row g-2">
+                <div class="form-floating mb-3 col-sm-12 col-md-4 col-lg-4">
+                    <select asp-for="ProdutoId" class="form-control" asp-items="ViewBag.ProdutoId"></select>
+                    <label asp-for="ProdutoId" class="control-label"></label>
+                </div>
+                <div class="form-floating mb-3 col-sm-12 col-md-4 col-lg-4">
+                    <input asp-for="Quantidade" type="number" class="form-control" id="inQuant" placeholder="name@example.com" step="1">
+                    <label asp-for="Quantidade" for="inQuant">Quantidade</label>
+                    <span asp-validation-for="Quantidade" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3 col-sm-12 col-md-4 col-lg-4">
+                    <input asp-for="Unitario" type="number" class="form-control" id="inUnit" placeholder="name@example.com" step=".01">
+                    <label asp-for="Unitario" for="inUnit">Valor Unitário</label>
+                    <span asp-validation-for="Unitario" class="text-danger"></span>
+                </div>
+                <div class="col justify-content-center align-content-center text-center">
+                    <input type="submit" value="Adicionar" class="btn btn-success" />
+                    <a asp-controller="CompraItems" asp-action="Index"><svg bootstrap-icon="ArrowReturnLeft" width="24" height="24" aria-label="Voltar" class="text-danger"></svg></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

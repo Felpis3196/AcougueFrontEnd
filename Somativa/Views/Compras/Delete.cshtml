@@ -1,0 +1,35 @@
+﻿@model Somativa.Models.Compra
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="container container-fluid">
+    <h4>Certeza que deseja apagar a venda de nota <span class="text-danger">@Model.Nota</span> ?</h4>
+    <hr />
+    <div class="row  justify-content-center align-content-center text-center">
+        <div class="col-md-6">
+            <dl class="row">
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.Nota)
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.Nota)
+                </dd>
+                <dt class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.DataHora)
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.DataHora)
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="text-center">
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="CompraId" />
+            <input type="submit" value="Apagar" class="btn btn-danger" />
+            <a asp-action="Index"><svg bootstrap-icon="ArrowReturnLeft" width="24" height="24" aria-label="Voltar" class="text-primary"></svg></a>
+        </form>
+    </div>
+</div>

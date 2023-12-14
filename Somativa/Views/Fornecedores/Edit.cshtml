@@ -1,0 +1,35 @@
+﻿@model Somativa.Models.Fornecedor
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<div class="container container-fluid row">
+    <div class="col">
+        <h4 class="text-start">Adicionar Fornecedor</h4>
+    </div>
+    <hr />
+    <div class="row g-2">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row g-2">
+                <div class="form-floating mb-3 col-4">
+                    <input asp-for="Nome" type="text" class="form-control" id="inNome" placeholder="name@example.com">
+                    <label asp-for="Nome" for="inNome">Nome</label>
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3 col-4">
+                    <input asp-for="Cnpj" type="text" class="form-control" id="inCnpj" placeholder="name@example.com">
+                    <label asp-for="Cnpj" for="inCnpj">Cnpj</label>
+                    <span asp-validation-for="Cnpj" class="text-danger"></span>
+                </div>
+                <div class="col justify-content-center align-content-center text-center">
+                    <input type="submit" value="Adicionar Fornecedor" class="btn btn-success" />
+                    <a asp-action="Index"><svg bootstrap-icon="ArrowReturnLeft" width="24" height="24" aria-label="Voltar" class="text-danger"></svg></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

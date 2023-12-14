@@ -1,0 +1,26 @@
+﻿@model Somativa.Models.Categoria
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container container-fluid">
+    <h4>Detalhes da @Model.Nome</h4>
+    <hr />
+    <div class="row  justify-content-center align-content-center text-center">
+        <div class="col-md-6">
+            <dl class="row">
+                <dt class="col-sm-4">
+                    @Html.DisplayNameFor(model => model.Nome)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Nome)
+                </dd>               
+        </div>       
+    </div>
+    <div class="text-center">
+        <a asp-action="Edit" asp-route-id="@Model?.CategoriaId"><svg bootstrap-icon="PencilFill" width="24" height="24" aria-label="Voltar" class="text-primary"></svg></a>
+        <a asp-action="Index"><svg bootstrap-icon="ArrowReturnLeft" width="24" height="24" aria-label="Voltar" class="text-danger"></svg></a>
+    </div>
+</div>
+
