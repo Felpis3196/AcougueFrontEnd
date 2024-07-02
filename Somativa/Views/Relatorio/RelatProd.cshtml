@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Somativa.Models.Produto>
 
 @{
-    ViewData["Title"] = "RelatProd";
+    ViewData["Title"] = "Relatório Produtos";
 
     List<Categoria> categorias = new List<Categoria>();
     categorias.Add(new Categoria { CategoriaId = new Guid(), Nome = "Todas" });
@@ -18,7 +18,7 @@
 -->
 
 <div class="container container-fluid">
-    <h1 class="text-center">RelatProd</h1>
+    <h1 class="text-center">Relatório Produtos</h1>
     <div class="row">
         <div cite="row g-3">
             <form>
@@ -35,11 +35,9 @@
                                 <option value="@item.CategoriaId">@item.Nome</option>
                             }
                         </select>
-                    </div>                   
-                </div>
-                <div class="row g-3">
-                    <button asp-action="SearchProd" class="btn btn-success col">Filtrar</button>
-                </div>
+                    </div>       
+                    <button asp-action="SearchProd" class="btn btn-success col w-25 h-75">Filtrar</button>
+                </div>        
             </form>
         </div>
     </div>

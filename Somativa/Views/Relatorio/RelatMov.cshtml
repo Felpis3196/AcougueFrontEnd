@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<Somativa.Models.Movimentacao>
 
 @{
-    ViewData["Title"] = "RelatMov";
+    ViewData["Title"] = "Relatório Movimentações";
     var prod = ViewData["Produtos"] as List<Produto>;
     prod.Insert(0, new Produto { ProdutoId = new Guid(), Nome = "Todos" });
 }
 
 <div class="container container-fluid">
-    <h1 class="text-center">RelatMov</h1>
+    <h1 class="text-center">Relatório Movimentações</h1>
     <div cite="row">
         <form>
             <div class="row g-3">
@@ -38,7 +38,7 @@
                         }
                     </select>
                 </div>
-                <button asp-action="SearchMov" class="btn btn-success ">Filtrar</button>
+                <button asp-action="SearchMov" class="btn btn-success w-50 h-75">Filtrar</button>
             </div>                            
         </form>
     </div>
