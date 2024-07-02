@@ -11,3 +11,4 @@ Senha: Operador@123456
 Usuário: admin@example.com
 Senha: Admin@123456
 
+## Trocar o endereço do banco de dados no arquivo appsettings.json
