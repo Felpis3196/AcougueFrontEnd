@@ -1,4 +1,4 @@
-# AçougueFrontEnd
+# Aplicação simples com intuito de replicar uma loja virtual de um açougue com área para controle de vendas, compras, estoque, fornecedores, etc. (Conta com responsividade)
 
 ### Temos 3 Usuários já cadastrados que são essenciais para o bom funcionamento da aplicação
 ### Gerente: 
