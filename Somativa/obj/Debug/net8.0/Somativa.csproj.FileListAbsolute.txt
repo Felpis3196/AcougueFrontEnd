@@ -288,3 +288,4 @@ C:\Users\fegri\Desktop\AcougueFrontEnd\Somativa\obj\Debug\net8.0\refint\Somativa
 C:\Users\fegri\Desktop\AcougueFrontEnd\Somativa\obj\Debug\net8.0\Somativa.pdb
 C:\Users\fegri\Desktop\AcougueFrontEnd\Somativa\obj\Debug\net8.0\Somativa.genruntimeconfig.cache
 C:\Users\fegri\Desktop\AcougueFrontEnd\Somativa\obj\Debug\net8.0\ref\Somativa.dll
+C:\Users\fegri\Desktop\AcougueFrontEnd\Somativa\bin\Debug\net8.0\System.Text.Json.dll
