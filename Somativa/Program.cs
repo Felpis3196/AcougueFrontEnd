@@ -16,8 +16,16 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<SprintContext>(
-    options => options.UseSqlServer(connectionString)   
+    options => options.UseSqlServer(connectionString)
 );
+
+// Configuração de autorização
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("RequireAdminRole", policy => policy.RequireRole("Admin"));
+    options.AddPolicy("RequireOperadorRole", policy => policy.RequireRole("Operador"));
+    options.AddPolicy("RequireGerenteRole", policy => policy.RequireRole("Gerente"));
+});
 
 var app = builder.Build();
 
@@ -29,7 +37,6 @@ if (app.Environment.IsDevelopment())
 else
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -38,7 +45,8 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
+app.UseAuthentication(); // Necessário para autenticação
+app.UseAuthorization();  // Necessário para autorização
 
 app.MapControllerRoute(
     name: "default",

@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<Somativa.Models.Produto>
+@using Microsoft.AspNetCore.Authorization
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -76,7 +77,10 @@
                     <div class="card-body">
                         <h5 class="card-title">Não Temos Produtos!</h5>
                         <p class="card-text">Desculpe, no momento estamos vazios volte mais tarde!</p>
+                        @if (User.IsInRole("Administrator") || User.IsInRole("Operador"))
+                        {
                         <a asp-action="Create" asp-controller="Produtos" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Requer Cargo de Operador">Adicionar Produtos!</a>
+                        }
                     </div>
                 </div>
             }
@@ -85,22 +89,30 @@
         <br />
         <hr />
         <div class="row">
-            <div class="col">
-                <h5 class="card-header">Fornecedores</h5>
-                <div class="card-body">
-                    <h5 class="card-title">Nossos Confiaveis Fornecedores</h5>
-                    <p class="card-text">Uma Listagem Com Todos Fornecedores de Extrema Qualidade.</p>
-                    <a asp-action="Index" asp-controller="Fornecedores" class="btn btn-primary text-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Requer Cargo de Operador">Lista</a>
+            @if (User.IsInRole("Administrator") || User.IsInRole("Operador"))
+            {
+                <div class="col">
+                    <h5 class="card-header">Fornecedores</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Nossos Confiaveis Fornecedores</h5>
+                        <p class="card-text">Uma Listagem Com Todos Fornecedores de Extrema Qualidade.</p>
+                        <a asp-action="Index" asp-controller="Fornecedores" class="btn btn-primary text-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Requer Cargo de Operador">Lista</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col">
-                <h5 class="card-header">Clientes</h5>
-                <div class="card-body">
-                    <h5 class="card-title">Nossos Fiéis Clientes</h5>
-                    <p class="card-text">Uma Listagem Com Todos Clientes de Nosso Boutique.</p>
-                    <a asp-action="Index" asp-controller="Clientes" class="btn btn-primary text-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Requer Cargo de Operador">Lista</a>
+            }
+            @if (User.IsInRole("Administrator") || User.IsInRole("Operador"))
+            {
+                <div class="col">
+                    <h5 class="card-header">Clientes</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Nossos Fiéis Clientes</h5>
+                        <p class="card-text">Uma Listagem Com Todos Clientes de Nosso Boutique.</p>
+                        <a asp-action="Index" asp-controller="Clientes" class="btn btn-primary text-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Requer Cargo de Operador">Lista</a>
+                    </div>
                 </div>
-            </div>
+            }
+            @if (User.IsInRole("Administrator") || User.IsInRole("Gerente"))
+            {
             <div class="col">
                 <h5 class="card-header">Movimentações</h5>
                 <div class="card-body">
@@ -109,6 +121,7 @@
                     <a asp-action="RelatMov" asp-controller="Relatorio" class="btn btn-primary text-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Requer Cargo de Gerente">Lista</a>
                 </div>
             </div>
+            }
         </div>
         <div class="row mt-5 g-2 border">
             <div class="col ">
@@ -150,10 +163,11 @@
         </div>
     </div>
 
-    <script>
-        $(document).ready(function() {
-            $('#exampleModal').modal('show');
-        });
-    </script>
+     <script>
+       $(document).ready(function () {
+       $('#exampleModal').modal('show');
+       });
+     </script>
+
 </body>
 </html>
