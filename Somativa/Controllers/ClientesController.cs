@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -11,8 +10,7 @@ using Somativa.Models;
 
 namespace Somativa.Controllers
 {
-	[Authorize(Roles = "Admin,Operador")]
-	public class ClientesController : Controller
+    public class ClientesController : Controller
     {
         private readonly SprintContext _context;
 
@@ -24,17 +22,13 @@ namespace Somativa.Controllers
         // GET: Clientes
         public async Task<IActionResult> Index()
         {
-            var clientes = _context.Clientes;
-            ViewBag.Clientes = clientes;
-              return _context.Clientes != null ? 
-                          View(await _context.Clientes.ToListAsync()) :
-                          Problem("Entity set 'SprintContext.Clientes'  is null.");
+            return View(await _context.Clientes.ToListAsync());
         }
 
         // GET: Clientes/Details/5
         public async Task<IActionResult> Details(Guid? id)
         {
-            if (id == null || _context.Clientes == null)
+            if (id == null)
             {
                 return NotFound();
             }
@@ -75,7 +69,7 @@ namespace Somativa.Controllers
         // GET: Clientes/Edit/5
         public async Task<IActionResult> Edit(Guid? id)
         {
-            if (id == null || _context.Clientes == null)
+            if (id == null)
             {
                 return NotFound();
             }
@@ -126,7 +120,7 @@ namespace Somativa.Controllers
         // GET: Clientes/Delete/5
         public async Task<IActionResult> Delete(Guid? id)
         {
-            if (id == null || _context.Clientes == null)
+            if (id == null)
             {
                 return NotFound();
             }
@@ -146,23 +140,19 @@ namespace Somativa.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
-            if (_context.Clientes == null)
-            {
-                return Problem("Entity set 'SprintContext.Clientes'  is null.");
-            }
             var cliente = await _context.Clientes.FindAsync(id);
             if (cliente != null)
             {
                 _context.Clientes.Remove(cliente);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ClienteExists(Guid id)
         {
-          return (_context.Clientes?.Any(e => e.ClienteId == id)).GetValueOrDefault();
+            return _context.Clientes.Any(e => e.ClienteId == id);
         }
     }
 }

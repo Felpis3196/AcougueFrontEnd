@@ -24,11 +24,11 @@
             <form>
                 <div class="row g-3">
                     <div class="input-group mb-3 col">
-                        <span class="input-group-text" id="basic-addon1">Nome</span>
-                        <input type="date" name="inNome" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        <span class="input-group-text" id="basic-addon1">Nome Cliente</span>
+                        <input type="text" name="inNome" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <div class="input-group mb-3 col">
-                        <span class="input-group-text" id="basic-addon1">Tipo de movimentação</span>
+                        <span class="input-group-text" id="basic-addon1">Selecionar Categoria</span>
                         <select class="form-select" aria-label="Default select example" name="inCategoria">
                             @foreach (var item in categorias)
                             {
@@ -49,7 +49,7 @@
                         @Html.DisplayNameFor(model => model.Nome)
                     </th>
                     <th>
-                        @Html.DisplayNameFor(model => model.Categoria.Nome)
+                        Categoria
                     </th>
                     <th>
                         @Html.DisplayNameFor(model => model.Estoque)

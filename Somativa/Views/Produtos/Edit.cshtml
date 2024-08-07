@@ -10,7 +10,7 @@
     </div>
     <hr />
     <div class="row g-2">
-        <form asp-action="Create">
+        <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="row g-2">
                 <div class="input-group mb-3 col">
@@ -44,7 +44,7 @@
                 <div class="input-group mb-3 col">
                     <span class="input-group-text"><svg bootstrap-icon="Person" width="14" height="14" aria-label="Data"></svg></span>
                     <div class="form-floating">
-                        <input asp-for="Nome" type="text" class="form-control" id="inNome" placeholder="Cpf" type="date">
+                        <input asp-for="Nome" type="text" class="form-control" id="inNome" placeholder="Cpf" type="text">
                         <label asp-for="Nome" for="inNome">Nome</label>
                     </div>
                 </div>

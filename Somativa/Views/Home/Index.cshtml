@@ -77,7 +77,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Não Temos Produtos!</h5>
                         <p class="card-text">Desculpe, no momento estamos vazios volte mais tarde!</p>
-                        @if (User.IsInRole("Administrator") || User.IsInRole("Operador"))
+                        @if (User.IsInRole("Admin") || User.IsInRole("Operador"))
                         {
                         <a asp-action="Create" asp-controller="Produtos" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Requer Cargo de Operador">Adicionar Produtos!</a>
                         }
@@ -89,7 +89,7 @@
         <br />
         <hr />
         <div class="row">
-            @if (User.IsInRole("Administrator") || User.IsInRole("Operador"))
+            @if (User.IsInRole("Admin") || User.IsInRole("Operador"))
             {
                 <div class="col">
                     <h5 class="card-header">Fornecedores</h5>
@@ -100,7 +100,7 @@
                     </div>
                 </div>
             }
-            @if (User.IsInRole("Administrator") || User.IsInRole("Operador"))
+            @if (User.IsInRole("Admin") || User.IsInRole("Operador"))
             {
                 <div class="col">
                     <h5 class="card-header">Clientes</h5>
@@ -111,7 +111,7 @@
                     </div>
                 </div>
             }
-            @if (User.IsInRole("Administrator") || User.IsInRole("Gerente"))
+            @if (User.IsInRole("Admin") || User.IsInRole("Gerente"))
             {
             <div class="col">
                 <h5 class="card-header">Movimentações</h5>

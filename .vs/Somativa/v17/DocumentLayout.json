@@ -3,40 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|c:\\users\\fegri\\desktop\\acouguefrontend\\somativa\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|solutionrelative:somativa\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|c:\\users\\fegri\\desktop\\acouguefrontend\\somativa\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|solutionrelative:somativa\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|c:\\users\\fegri\\desktop\\acouguefrontend\\somativa\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|solutionrelative:somativa\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|c:\\users\\fegri\\desktop\\acouguefrontend\\somativa\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|solutionrelative:somativa\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|c:\\users\\fegri\\desktop\\acouguefrontend\\somativa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|solutionrelative:somativa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|c:\\users\\fegri\\desktop\\acouguefrontend\\somativa\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|solutionrelative:somativa\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|c:\\users\\fegri\\desktop\\acouguefrontend\\somativa\\views\\relatorio\\relatprod.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|solutionrelative:somativa\\views\\relatorio\\relatprod.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|c:\\users\\fegri\\desktop\\acouguefrontend\\somativa\\controllers\\relatoriocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|solutionrelative:somativa\\controllers\\relatoriocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|c:\\users\\fegri\\desktop\\acouguefrontend\\somativa\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|solutionrelative:somativa\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|c:\\users\\fegri\\desktop\\acouguefrontend\\somativa\\views\\produtos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|solutionrelative:somativa\\views\\produtos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|c:\\users\\fegri\\desktop\\acouguefrontend\\somativa\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|solutionrelative:somativa\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|c:\\users\\fegri\\desktop\\acouguefrontend\\somativa\\views\\produtos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FC18EE3-C7A1-462B-A5B5-EB284A89B8A7}|Somativa\\Somativa.csproj|solutionrelative:somativa\\views\\produtos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,46 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "Somativa\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "Somativa\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-04T01:56:02.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Somativa\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeToolTip": "Somativa\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-04T01:55:57.363Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Logout.cshtml",
-              "DocumentMoniker": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-              "RelativeDocumentMoniker": "Somativa\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-              "ToolTip": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-              "RelativeToolTip": "Somativa\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-04T01:55:56.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "RelatorioController.cs",
               "DocumentMoniker": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Controllers\\RelatorioController.cs",
               "RelativeDocumentMoniker": "Somativa\\Controllers\\RelatorioController.cs",
@@ -101,71 +42,46 @@
               "RelativeToolTip": "Somativa\\Controllers\\RelatorioController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T01:27:18.273Z",
+              "WhenOpened": "2024-08-07T16:59:09.177Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ClientesController.cs",
-              "DocumentMoniker": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Controllers\\ClientesController.cs",
-              "RelativeDocumentMoniker": "Somativa\\Controllers\\ClientesController.cs",
-              "ToolTip": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Controllers\\ClientesController.cs",
-              "RelativeToolTip": "Somativa\\Controllers\\ClientesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T01:27:13.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Program.cs",
-              "RelativeDocumentMoniker": "Somativa\\Program.cs",
-              "ToolTip": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Program.cs",
-              "RelativeToolTip": "Somativa\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T01:25:24.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Somativa\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Somativa\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T01:03:01.175Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Somativa\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Somativa\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "RelatProd.cshtml",
+              "DocumentMoniker": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Views\\Relatorio\\RelatProd.cshtml",
+              "RelativeDocumentMoniker": "Somativa\\Views\\Relatorio\\RelatProd.cshtml",
+              "ToolTip": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Views\\Relatorio\\RelatProd.cshtml",
+              "RelativeToolTip": "Somativa\\Views\\Relatorio\\RelatProd.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAEYAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-30T12:35:17.73Z"
+              "WhenOpened": "2024-08-07T16:53:22.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Views\\Produtos\\Index.cshtml",
+              "RelativeDocumentMoniker": "Somativa\\Views\\Produtos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Views\\Produtos\\Index.cshtml",
+              "RelativeToolTip": "Somativa\\Views\\Produtos\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-07T16:52:31.964Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Somativa\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Somativa\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAADwAAAAAAAAAAAAQwFAAAAAZAAAA",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Views\\Produtos\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Somativa\\Views\\Produtos\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\fegri\\Desktop\\AcougueFrontEnd\\Somativa\\Views\\Produtos\\Edit.cshtml",
+              "RelativeToolTip": "Somativa\\Views\\Produtos\\Edit.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAC4AAAB3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-27T03:43:08.912Z",
+              "WhenOpened": "2024-08-07T16:52:02.649Z",
               "EditorCaption": ""
             }
           ]
