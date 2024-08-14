@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Somativa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5bf31a7c2863764ff1e0fac8a84d7be0b66a2176")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e65722a1e9f41dae2f7f6d453bc6009f74d2a5db")]
 [assembly: System.Reflection.AssemblyProductAttribute("Somativa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Somativa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

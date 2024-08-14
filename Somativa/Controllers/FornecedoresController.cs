@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -11,8 +10,7 @@ using Somativa.Models;
 
 namespace Somativa.Controllers
 {
-	[Authorize(Roles = "Admin,Operador")]
-	public class FornecedoresController : Controller
+    public class FornecedoresController : Controller
     {
         private readonly SprintContext _context;
 
@@ -24,15 +22,13 @@ namespace Somativa.Controllers
         // GET: Fornecedores
         public async Task<IActionResult> Index()
         {
-              return _context.Fornecedores != null ? 
-                          View(await _context.Fornecedores.ToListAsync()) :
-                          Problem("Entity set 'SprintContext.Fornecedores'  is null.");
+            return View(await _context.Fornecedores.ToListAsync());
         }
 
         // GET: Fornecedores/Details/5
         public async Task<IActionResult> Details(Guid? id)
         {
-            if (id == null || _context.Fornecedores == null)
+            if (id == null)
             {
                 return NotFound();
             }
@@ -73,7 +69,7 @@ namespace Somativa.Controllers
         // GET: Fornecedores/Edit/5
         public async Task<IActionResult> Edit(Guid? id)
         {
-            if (id == null || _context.Fornecedores == null)
+            if (id == null)
             {
                 return NotFound();
             }
@@ -124,7 +120,7 @@ namespace Somativa.Controllers
         // GET: Fornecedores/Delete/5
         public async Task<IActionResult> Delete(Guid? id)
         {
-            if (id == null || _context.Fornecedores == null)
+            if (id == null)
             {
                 return NotFound();
             }
@@ -144,23 +140,19 @@ namespace Somativa.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
-            if (_context.Fornecedores == null)
-            {
-                return Problem("Entity set 'SprintContext.Fornecedores'  is null.");
-            }
             var fornecedor = await _context.Fornecedores.FindAsync(id);
             if (fornecedor != null)
             {
                 _context.Fornecedores.Remove(fornecedor);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool FornecedorExists(Guid id)
         {
-          return (_context.Fornecedores?.Any(e => e.FornecedorId == id)).GetValueOrDefault();
+            return _context.Fornecedores.Any(e => e.FornecedorId == id);
         }
     }
 }

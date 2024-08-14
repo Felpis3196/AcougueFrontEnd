@@ -11,8 +11,8 @@ using Somativa.Models;
 
 namespace Somativa.Controllers
 {
-	[Authorize(Roles = "Admin,Operador")]
-	public class VendasController : Controller
+    [Authorize(Roles = "Admin,Operador")]
+    public class VendasController : Controller
     {
         private readonly SprintContext _context;
 
@@ -158,14 +158,14 @@ namespace Somativa.Controllers
             {
                 _context.Vendas.Remove(venda);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool VendaExists(Guid id)
         {
-          return (_context.Vendas?.Any(e => e.VendaId == id)).GetValueOrDefault();
+            return (_context.Vendas?.Any(e => e.VendaId == id)).GetValueOrDefault();
         }
     }
 }

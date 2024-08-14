@@ -11,6 +11,7 @@
     <div class="row g-2">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="FornecedorId" />
             <div class="row g-2">
                 <div class="form-floating mb-3 col-4">
                     <input asp-for="Nome" type="text" class="form-control" id="inNome" placeholder="name@example.com">

@@ -58,6 +58,7 @@ namespace Somativa.Controllers
 			var mov = await MovimentacaoList.getList(_context);
 			ViewData["Produtos"] = await _context.Produtos.ToListAsync();
 
+            if (inDataFim != null && inDataIni != null) mov = mov.Where(i => i.DataHora >= inDataIni && i.DataHora <= inDataFim).ToList();
             if (inDataIni != null) mov = mov.Where(i => i.DataHora >= inDataIni).ToList();
 			if (inDataFim != null) mov = mov.Where(i => i.DataHora <= inDataFim).ToList();
 

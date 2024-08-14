@@ -7,7 +7,7 @@
 
 <div class="container container-fluid row">
     <div class="col">
-        <h4 class="text-start">Editar Cliente, @Model.Nome</h4>
+        <h4 class="text-start">Editar Cliente: @Model.Nome</h4>
     </div>
     <hr />
     <div class="row g-2">
@@ -43,15 +43,16 @@
                 <div class="input-group mb-3 col">
                     <span class="input-group-text"><svg bootstrap-icon="Person" width="14" height="14" aria-label="Cpf"></svg></span>
                     <div class="form-floating">
-                        <input asp-for="Email" type="text" class="form-control" id="inEmail" placeholder="Cpf">
+                        <input asp-for="Email" type="text" class="form-control" id="inEmail" placeholder="Email">
                         <label asp-for="Email" for="inEmail">email@@email.com</label>
                     </div>
                 </div>
                 <div class="input-group mb-3 col">
                     <span class="input-group-text"><svg bootstrap-icon="CalendarDate" width="14" height="14" aria-label="Data"></svg></span>
                     <div class="form-floating">
-                        <input asp-for="Nascimento" type="text" class="form-control" id="inNascimento" placeholder="Cpf" type="date">
+                        <input asp-for="Nascimento" type="date" class="form-control" id="inNascimento" placeholder="Nascimento">
                         <label asp-for="Nascimento" for="inNascimento">Nascimento</label>
+                        <span asp-validation-for="Nascimento" class="text-danger"></span>
                     </div>
                 </div>
                 <div class="col justify-content-center align-content-center text-center">
